@@ -1,0 +1,4321 @@
+/*
+Theme Name: ver2018
+Theme URI: https://blog.bizweb.vn/
+Author: TuanNM
+Author URI: https://blog.bizweb.vn/
+Description: New Blog Version 2018
+Version: 1.0
+License:
+License URI:
+Tags: 022017
+Text Domain: 022017
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('css/font-roboto/fonts/Roboto-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('css/font-roboto/fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('css/font-roboto/fonts/Roboto-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('css/font-roboto/fonts/Roboto-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Noto Serif';
+    src: url('css/font-noto/NotoSerif-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Noto Serif';
+    src: url('css/font-noto/NotoSerif-Italic.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Noto Serif';
+    src: url('css/font-noto/NotoSerif-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Noto Serif';
+    src: url('css/font-noto/NotoSerif-BoldItalic.ttf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Global */
+body {
+    font-family: "Roboto",Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1.3em;
+}
+html.overflow, html.overflow body{
+  overflow: hidden;
+  height: 100%;
+}
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-margin-top {
+    margin-top: 0 !important;
+}
+
+.no-margin-right {
+    margin-right: 0 !important;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
+.no-margin-left {
+    margin-left: 0 !important;
+}
+
+.no-margin-vertical {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.no-margin-horizontal {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.margin-xs {
+    margin: 3px !important;
+}
+
+.margin-xs-top {
+    margin-top: 3px !important;
+}
+
+.margin-xs-right {
+    margin-right: 3px !important;
+}
+
+.margin-xs-bottom {
+    margin-bottom: 3px !important;
+}
+
+.margin-xs-left {
+    margin-left: 3px !important;
+}
+
+.margin-xs-vertical {
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+}
+
+.margin-xs-horizontal {
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+}
+
+.margin-sm {
+    margin: 6px !important;
+}
+
+.margin-sm-top {
+    margin-top: 6px !important;
+}
+
+.margin-sm-right {
+    margin-right: 6px !important;
+}
+
+.margin-sm-bottom {
+    margin-bottom: 6px !important;
+}
+
+.margin-sm-left {
+    margin-left: 6px !important;
+}
+
+.margin-sm-vertical {
+    margin-top: 6px !important;
+    margin-bottom: 6px !important;
+}
+
+.margin-sm-horizontal {
+    margin-left: 6px !important;
+    margin-right: 6px !important;
+}
+
+.margin {
+    margin: 10px !important;
+}
+
+.margin-top {
+    margin-top: 10px !important;
+}
+
+.margin-right {
+    margin-right: 10px !important;
+}
+
+.margin-bottom {
+    margin-bottom: 10px !important;
+}
+
+.margin-left {
+    margin-left: 10px !important;
+}
+
+.margin-vertical {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.margin-horizontal {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.margin-md {
+    margin: 16px !important;
+}
+
+.margin-md-top {
+    margin-top: 16px !important;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .btn-registration {
+        margin-top: 16px !important;
+    }
+}
+
+.margin-md-right {
+    margin-right: 16px !important;
+}
+
+.margin-md-bottom {
+    margin-bottom: 16px !important;
+}
+
+.margin-md-left {
+    margin-left: 16px !important;
+}
+
+.margin-md-vertical {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+}
+
+.margin-md-horizontal {
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+}
+
+.margin-lg {
+    margin: 22px !important;
+}
+
+.margin-lg-top {
+    margin-top: 22px !important;
+}
+
+.margin-lg-right {
+    margin-right: 22px !important;
+}
+
+.margin-lg-bottom {
+    margin-bottom: 22px !important;
+}
+
+@media (min-width: 992px) {
+    .home-supports .margin-lg-bottom {
+        padding: 0;
+    }
+}
+
+.margin-lg-left {
+    margin-left: 22px !important;
+}
+
+.margin-lg-vertical {
+    margin-top: 22px !important;
+    margin-bottom: 22px !important;
+}
+
+.margin-lg-horizontal {
+    margin-left: 22px !important;
+    margin-right: 22px !important;
+}
+
+.margin-xl {
+    margin: 32px !important;
+}
+
+.margin-xl-top {
+    margin-top: 32px !important;
+}
+
+.margin-xl-right {
+    margin-right: 32px !important;
+}
+
+.margin-xl-bottom {
+    margin-bottom: 32px !important;
+}
+
+.margin-xl-left {
+    margin-left: 32px !important;
+}
+
+.margin-xl-vertical {
+    margin-top: 32px !important;
+    margin-bottom: 32px !important;
+}
+
+.margin-xl-horizontal {
+    margin-left: 32px !important;
+    margin-right: 32px !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-padding-top {
+    padding-top: 0 !important;
+}
+
+.no-padding-right {
+    padding-right: 0 !important;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0 !important;
+}
+
+.no-padding-left {
+    padding-left: 0 !important;
+}
+
+.no-padding-vertical {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.no-padding-horizontal {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.padding-xs {
+    padding: 3px !important;
+}
+
+.padding-xs-top {
+    padding-top: 3px !important;
+}
+
+.padding-xs-right {
+    padding-right: 3px !important;
+}
+
+.padding-xs-bottom {
+    padding-bottom: 3px !important;
+}
+
+.padding-xs-left {
+    padding-left: 3px !important;
+}
+
+.padding-xs-vertical {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+}
+
+.padding-xs-horizontal {
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+}
+
+.padding-sm {
+    padding: 6px !important;
+}
+
+.padding-sm-top {
+    padding-top: 6px !important;
+}
+
+.padding-sm-right {
+    padding-right: 6px !important;
+    padding-top : 0px;
+    font-size : 14px;
+    margin-bottom : 0px;
+}
+
+.padding-sm-bottom {
+    padding-bottom: 6px !important;
+}
+
+.padding-sm-left {
+    padding-left: 6px !important;
+}
+
+.padding-sm-vertical {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+}
+
+.padding-sm-horizontal {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+}
+
+.padding {
+    padding: 10px !important;
+}
+
+.padding-top {
+    padding-top: 10px !important;
+}
+
+.padding-right {
+    padding-right: 10px !important;
+}
+
+.padding-bottom {
+    padding-bottom: 10px !important;
+}
+
+.padding-left {
+    padding-left: 10px !important;
+}
+
+.padding-vertical {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.padding-horizontal {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.padding-md {
+    padding: 16px !important;
+}
+
+.padding-md-top {
+    padding-top: 16px !important;
+}
+
+.padding-md-right {
+    padding-right: 16px !important;
+}
+
+.padding-md-bottom {
+    padding-bottom: 16px !important;
+}
+
+.padding-md-left {
+    padding-left: 16px !important;
+}
+
+.padding-md-vertical {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+.padding-md-horizontal {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+.padding-lg {
+    padding: 22px !important;
+}
+
+.padding-lg-top {
+    padding-top: 22px !important;
+}
+
+.padding-lg-right {
+    padding-right: 22px !important;
+}
+
+.padding-lg-bottom {
+    padding-bottom: 22px !important;
+}
+
+.padding-lg-left {
+    padding-left: 22px !important;
+}
+
+.padding-lg-vertical {
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+}
+
+.padding-lg-horizontal {
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+}
+
+.padding-xl {
+    padding: 32px !important;
+}
+
+.padding-xl-top {
+    padding-top: 32px !important;
+}
+
+.padding-xl-right {
+    padding-right: 32px !important;
+}
+
+.padding-xl-bottom {
+    padding-bottom: 32px !important;
+}
+
+.padding-xl-left {
+    padding-left: 32px !important;
+}
+
+.padding-xl-vertical {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+}
+
+.padding-xl-horizontal {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+}
+
+.line-gray {
+    border-top: none;
+    border-bottom: solid thin #40474e;
+}
+
+.btn-registration, .btn-bizweb {
+    color: #ffffff;
+    background: #2ad38b;
+    background: linear-gradient(to right, #2ad38b , #0cceb0);
+    border-radius: 45px;
+    display: inline-block;
+    line-height: 63px;
+    padding: 0 35px;
+    outline: none;
+    -webkit-user-select: none;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    white-space: nowrap;
+    font-size: 16px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.btn-registration:before, .btn-bizweb:before {
+    content: "";
+    border-radius: 45px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.04);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.btn-registration:hover, .btn-registration:focus, .btn-registration:active, .btn-bizweb:hover, .btn-bizweb:focus, .btn-bizweb:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-registration:hover:before, .btn-registration:focus:before, .btn-registration:active:before, .btn-bizweb:hover:before, .btn-bizweb:focus:before, .btn-bizweb:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.btn-registration:hover, .btn-bizweb:hover {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.text-infos {
+    color: #e6e6e6 !important;
+}
+
+.text-aqua {
+    color: #22a1e6 !important;
+}
+
+.text-large {
+    font-size: 30px;
+}
+
+.autoresize-image {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+.h3-scale {
+    font-size: 69px;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+.h3-grant {
+    font-size: 6.5em;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+.caption {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    font-weight: 100;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+/* ************************************************************************************************ */
+/* Fancybox */
+.fancybox-overlay {
+    background-image: url("https://www.bizweb.vn/Themes/Portal/Default/Images/video-reg-fancybg.png");
+}
+
+.fancybox-skin {
+    background: transparent;
+}
+
+.fancybox-opened .fancybox-skin {
+    box-shadow: none;
+}
+
+.fancybox-close {
+    right: 25px;
+    top: 30px;
+    background: url('https://www.bizweb.vn/Themes/Portal/Default/Images/icon-popup-close.png') no-repeat center top;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.fancybox-close-reg-web {
+    right: 40px !important;
+}
+
+.fancybox-close-reg {
+    right: 18px;
+}
+
+/*.fancybox-close-reg-web {
+    right: 120px;
+}*/
+
+.fa-spin-sp {
+    color: red;
+    -webkit-animation: spin-sp 2s infinite linear;
+    -moz-animation: spin-sp 2s infinite linear;
+    -o-animation: spin-sp 2s infinite linear;
+    animation: spin-sp 2s infinite linear;
+}
+
+.new-fancybox-wrapper{
+    position : relative;
+}
+
+.new-fancybox-close{
+    background : url("https://www.bizweb.vn/Themes/Portal/Default/Images/popup/bt_close.png");
+    width : 36px;
+    height : 36px;
+    position :absolute;
+    right : 120px;
+    top : 0px;
+}
+@media(max-width : 767px){
+    .new-fancybox-close{
+        right : 60px;
+    }
+}
+
+#livechat-full, #livechat-compact-container, #livechat-eye-catcher {
+    right: 20px !important;
+}
+#livechat-compact-container {
+    width: 270px !important;
+    height: 98px !important;
+}
+#livechat-eye-catcher {
+    bottom: 50px !important;
+    display : none !important;
+}
+
+
+/* ************************************************************************************************ */
+/* Header & Menu */
+.header {
+  color: #FFFFFF;
+  z-index: 110;
+  width: 100%;
+}
+.header .container {
+  position: relative;
+}
+.header .container .col-lg-8 {
+  position: static;
+}
+.header .main-logo {
+  display: block;
+  height: 97px;
+  line-height: 97px;
+  float: left;
+  margin-right: 15px;
+}
+.header.index {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header.index .main-menu li a {
+  color: #fff;
+}
+.header.index .main-menu li a.active {
+  text-decoration: underline;
+}
+.header.index .main-menu li a:not(.btn-registration):hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.header.index .main-menu li:hover a:not(.btn-registration) {
+  color: #fff;
+  text-decoration: underline;
+}
+.header.index .main-menu li .btn-registration {
+  background: transparent;
+  border: 1px solid #fff;
+}
+.header.index .main-menu li .btn-registration span {
+  color: #fff;
+  background: transparent;
+}
+.header.index .main-menu li .btn-registration:hover {
+  background: #fff;
+}
+.header.index .main-menu li .btn-registration:hover span {
+  color: #26b896;
+}
+.header.index .main-menu li.sub-lv2 a {
+  color: #fff;
+}
+.header.index .main-menu li.sub-lv2 li a {
+  color: #42464e;
+  text-decoration: none;
+}
+.header.index .main-menu li.sub-lv2 li a:hover {
+  color: #08f;
+}
+.header.index .main-menu li.sub-lv2 i {
+  color: #fff;
+}
+.header.index .main-menu li.sub-lv2:hover i {
+  color: #fff;
+}
+.header.index .main-menu li.sub-lv2:hover li a {
+  color: #42464e;
+  text-decoration: none;
+}
+.header.index .main-menu li.sub-lv2:hover li a:hover {
+  color: #08f;
+}
+.header.index .btn-menu i {
+  color: #fff;
+}
+.header .main-menu {
+  list-style: none;
+  float: right;
+  padding: 0 0;
+  margin: 0 0;
+}
+.header .main-menu:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.header .main-menu li {
+  float: left;
+  padding-left: 12px;
+}
+.header .main-menu li.sub-lv2 {
+  padding-right: 21px;
+}
+.header .main-menu li.sub-lv2 a {
+  color: #42464e;
+}
+.header .main-menu li.sub-lv2 i {
+  color: #565656;
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  font-size: 12px;
+  margin-top: -6px;
+}
+.header .main-menu li.sub-lv2:hover i {
+  color: #08f;
+}
+.header .main-menu li.sub-lv2:hover .sub-menu {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.header .main-menu li.trial {
+  height: 97px;
+  line-height: 97px;
+}
+.header .main-menu li:hover > a {
+  color: #08f;
+}
+.header .main-menu li a {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 97px;
+  transition: color 0.2s ease 0s;
+  color: #444;
+  margin-left: 12px;
+  position: relative;
+  font-weight: 700;
+}
+.header .main-menu li a.active {
+  color: #08f;
+}
+.header .main-menu li a.active i {
+  color: #08f;
+}
+.header .main-menu li a:hover {
+  text-decoration: none;
+  color: #08f;
+}
+.header .main-menu li a.btn-registration {
+  height: 40px;
+  line-height: 40px;
+  padding: 1px;
+}
+.header .main-menu li a.btn-registration span {
+  height: 38px;
+  line-height: 38px;
+  display: block;
+  background: #fff;
+  padding: 0 30px;
+  color: #26b896;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+.header .main-menu li a.btn-registration:hover span {
+  background: transparent;
+  color: #fff;
+  text-decoration: none !important;
+}
+.header .header-left .main-menu {
+  float: left;
+}
+.header .header-left .main-menu > li a {
+  font-weight: 700;
+}
+.header .header-left .main-menu > li.sub-lv2 > a {
+  position: relative;
+}
+.header .header-left .main-menu > li.sub-lv2 > a:after, .header .header-left .main-menu > li.sub-lv2 > a:before {
+  bottom: 0;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  display: none;
+}
+.header .header-left .main-menu > li.sub-lv2 > a:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #189eff;
+  border-width: 9px;
+  margin-left: -9px;
+}
+.header .header-left .main-menu > li.sub-lv2 > a:before {
+  border-color: rgba(241, 241, 241, 0);
+  border-bottom-color: #189eff;
+  border-width: 10px;
+  margin-left: -10px;
+}
+.header .header-left .main-menu > li:hover > a:after, .header .header-left .main-menu > li:hover > a:before {
+  display: block;
+}
+.header .header-left .main-menu .sub-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
+}
+.header .header-left .main-menu .sub-menu:before {
+  display: block;
+  content: "";
+  height: 32px;
+  background: transparent;
+  position: absolute;
+  margin-top: -32px;
+  width: 100%;
+  z-index: 9;
+}
+.header .header-left .main-menu .sub-menu.offline-sale .menu-items .desc {
+  background: #189eff url(//www.sapo.vn/Themes/Portal/Default/Styles_New/images/index-home/img-offline-sale.jpg) no-repeat bottom center;
+}
+.header .header-left .main-menu .sub-menu.omnichannel .menu-items .desc {
+  background: #189eff url(//www.sapo.vn/Themes/Portal/Default/Styles_New/images/index-home/img-omnichannel.jpg) no-repeat bottom center;
+}
+.header .header-left .main-menu .sub-menu.other .menu-items .desc {
+  background: #189eff url(//www.sapo.vn/Themes/Portal/Default/Styles_New/images/index-home/img-other.jpg) no-repeat bottom center;
+}
+.header .header-left .main-menu .sub-menu .menu-items {
+  text-align: left;
+  background: #fff;
+  position: relative;
+  border-top: 2px solid #189eff;
+  box-shadow: 0 0 25px -5px rgba(0, 0, 0, 0.2);
+}
+.header .header-left .main-menu .sub-menu .menu-items .desc {
+  width: 300px;
+  padding-bottom: 150px;
+  background: #189eff url(//www.sapo.vn/Themes/Portal/Default/Styles_New/images/index-home/img-online-sale.jpg) no-repeat bottom center;
+  color: #fff;
+  min-height: 300px;
+}
+.header .header-left .main-menu .sub-menu .menu-items .desc a {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  display: block;
+  color: #fff;
+  padding: 10px 0 8px 20px;
+  text-decoration: none !important;
+  margin: 0 0;
+}
+.header .header-left .main-menu .sub-menu .menu-items .desc a:hover {
+  text-decoration: none !important;
+  color: #fff;
+}
+.header .header-left .main-menu .sub-menu .menu-items .desc p {
+  margin: 0 0;
+  font-size: 15px;
+  padding: 0 20px 10px 20px;
+}
+.header .header-left .main-menu .sub-menu .menu-items .col-m {
+  width: 305px;
+  padding: 15px 0;
+}
+.header .header-left .main-menu .sub-menu .menu-items .col-l {
+  width: 345px;
+  padding: 15px 0;
+}
+.header .header-left .main-menu .sub-menu .menu-items .col-s {
+  width: 220px;
+  padding: 15px 0;
+}
+.header .header-left .main-menu .sub-menu .menu-items .col-s ul li {
+  margin-bottom: 30px;
+}
+.header .header-left .main-menu .sub-menu .menu-items ul {
+  padding: 15px 30px;
+  list-style: none;
+  border-right: 1px solid #e8e8e8;
+  min-height: 215px;
+}
+.header .header-left .main-menu .sub-menu .menu-items ul.no-border {
+  border: none;
+}
+.header .header-left .main-menu .sub-menu .menu-items ul li {
+  float: none;
+  padding: 0 0;
+  color: #42464e;
+  margin-bottom: 20px;
+}
+.header .header-left .main-menu .sub-menu .menu-items ul li:last-child {
+  margin-bottom: 0;
+}
+.header .header-left .main-menu .sub-menu .menu-items ul li a {
+  line-height: normal;
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 0;
+  color: #383839;
+  font-size: 16px;
+  font-weight: 500;
+}
+.header .header-left .main-menu .sub-menu .menu-items ul li a:hover {
+  color: #08f;
+}
+.header .header-left .main-menu .sub-menu .menu-items ul li a .flag {
+  color: #fe887f;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  vertical-align: super;
+  margin-left: -2px;
+}
+.header .header-left .main-menu .sub-menu .menu-items ul li p {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  height: 40px;
+  color: #8f8f8f;
+}
+.header .btn-menu {
+  display: inline-block;
+  line-height: 73px;
+  margin-right: 8px;
+}
+.header .btn-menu i {
+  color: #0fd186;
+  display: inline-block;
+  font-size: 26px;
+  vertical-align: middle;
+}
+
+.menu-mobile {
+  width: 450px;
+  max-width: 91%;
+  background: #fff;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  right: -450px;
+  padding: 0 15px;
+  z-index: 2147483641;
+  transition: all 0.3s ease-in-out;
+  overflow: auto;
+}
+.menu-mobile.show {
+  right: 0;
+}
+.menu-mobile .logo-mobile {
+  line-height: 72px;
+  border-bottom: 1px solid #dfdfdf;
+  position: relative;
+  margin: 0 0 20px;
+}
+.menu-mobile .logo-mobile .btn-close-menu {
+  position: absolute;
+  font-size: 21px;
+  color: #42464e;
+  right: 0;
+  top: 0;
+  text-decoration: none;
+}
+.menu-mobile .nav > li {
+  margin-bottom: 20px;
+}
+.menu-mobile .nav > li > a {
+  font-size: 18px;
+  color: #42464e;
+  font-weight: bold;
+  padding: 0;
+}
+.menu-mobile .nav > li > a:hover, .menu-mobile .nav > li > a:focus {
+  background: none;
+}
+.menu-mobile .nav > li > a .caret-down {
+  border: 5px solid transparent;
+  border-top-color: #d0d0d0;
+  display: inline-block;
+}
+.menu-mobile .nav > li .sub-menu {
+  padding-left: 15px;
+  border-left: 1px solid #dfdfdf;
+  list-style: none;
+  margin-top: 10px;
+}
+.menu-mobile .nav > li .sub-menu li a {
+  font-size: 16px;
+  color: #42464e;
+  padding: 9px 0;
+  display: block;
+}
+.menu-mobile .nav > li .sub-menu li a .flag{
+    color: #fe887f;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    vertical-align: super;
+    margin-left: -2px;
+}
+.menu-mobile .nav.nav-bottom {
+  border-top: 1px solid #dfdfdf;
+  padding-top: 22px;
+}
+.menu-mobile .nav.nav-bottom li {
+  margin-bottom: 0;
+}
+.menu-mobile .nav.nav-bottom li a {
+  font-size: 18px;
+  padding: 10px 0;
+  font-weight: 400;
+}
+.menu-mobile .nav.nav-bottom li.trial {
+  margin-bottom: 36px;
+}
+.menu-mobile .nav.nav-bottom li.trial a {
+  margin-top: 18px;
+  color: #26b896;
+  height: 42px;
+  line-height: 42px;
+  padding: 2px;
+  display: inline-block;
+  background: #2ad38b;
+  background: linear-gradient(to right, #2ad38b, #0cceb0);
+}
+.menu-mobile .nav.nav-bottom li.trial a span {
+  font-size: 15px;
+  height: 38px;
+  line-height: 38px;
+  display: block;
+  background: #fff;
+  padding: 0 36px;
+  color: #26b896;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+.menu-mobile .nav.nav-bottom li.trial a:hover span {
+  background: transparent;
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.overlay-menu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 2147483640;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.23);
+  display: none;
+}
+.overlay-menu.show {
+  display: block;
+}
+
+@media (max-width: 1199px) {
+  .header .main-logo {
+    line-height: 72px;
+    height: 72px;
+  }
+  .header .main-logo img {
+    height: 52px !important;
+  }
+}
+header .banner-header
+{
+    background: url(https://www.sapo.vn/blog/wp-content/themes/ver2018/images/bg-banner-blog.jpg) no-repeat center center;
+    padding: 55px 0 45px;
+    text-align: center;
+    color: #fff;
+}
+
+header .banner-header .home-banner {
+
+}
+header .banner-header .home-banner p.desc {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+header .banner-header .home-banner  .btn-subscribe
+{
+    color: #ffffff;
+    background: #2ad38b;
+    background: linear-gradient(to right, #2ad38b , #0cceb0);
+    border-radius: 45px;
+    display: inline-block;
+    line-height: 46px;
+    padding: 0 35px;
+    outline: none;
+    -webkit-user-select: none;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    white-space: nowrap;
+    font-size: 16px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+header .banner-header .home-banner  .btn-subscribe:before {
+    content: "";
+    border-radius: 45px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.04);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+header .banner-header .home-banner  .btn-subscribe:hover, header .banner-header .home-banner  .btn-subscribe:focus, header .banner-header .home-banner  .btn-subscribe:active {
+    color: white;
+    text-decoration: none;
+}
+header .banner-header .home-banner  .btn-subscribe:hover:before, header .banner-header .home-banner  .btn-subscribe:focus:before, header .banner-header .home-banner  .btn-subscribe:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+header .banner-header .home-banner span {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+header .banner-header h1,
+header .banner-header .title
+{
+    font-size: 44px;
+    font-weight: 700;
+    margin: 0 0 12px;
+    color: #fff;
+}
+header .banner-header h1 a,
+header .banner-header h2 a
+{
+    color: #fff;
+    cursor: none;
+}
+header .banner-header h2 a:hover,
+header .banner-header h1 a:hover
+{
+    text-decoration: none;
+}
+header .banner-header span
+{
+    margin-top: 15px;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+
+.blog-menu
+{
+    border-bottom: 1px solid #dedede;
+    border-top: 1px solid #ebebeb;
+}
+.blog-menu .main-menu
+{
+    float: left;
+}
+.blog-menu ul
+{
+    padding: 0 0;
+    margin: 0 0;
+    list-style: none;
+}
+.blog-menu .main-menu > li
+{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+.blog-menu .main-menu > li > a
+{
+    font-size: 15px;
+    color: #2d2d2d;
+    border-bottom: 4px solid transparent;
+    display: inline-block;
+    padding: 20px 0 16px;
+    margin: 0 20px;
+}
+.blog-menu .main-menu > li:first-child > a
+{
+    margin-left: 0;
+    font-size: 25px;
+    color: #0fd186;
+    padding: 10px 0;
+}
+.blog-menu .main-menu > li:hover > a
+{
+    border-bottom: 4px solid #0fd186;
+    text-decoration: none;
+}
+.blog-menu .main-menu > li ul
+{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background: #fff;
+    z-index: 999;
+    width: 265px;
+}
+.blog-menu .main-menu > li:first-child ul
+{
+    left: 0;
+}
+.blog-menu .main-menu > li:hover ul
+{
+    display: block;
+}
+.blog-menu .main-menu > li ul li
+{
+    margin: 0 25px;
+    border-bottom: 1px solid #ebebeb;
+}
+.blog-menu .main-menu > li ul li a
+{
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 15px;
+    color: #989797;
+}
+.blog-menu .main-menu > li ul li a:hover
+{
+    color: #2d2d2d;
+    text-decoration: none;
+}
+
+.search-form
+{
+    position: relative;
+    float: right;
+}
+.search-form .icon-search-post
+{
+    display: block;
+    width: 70px;
+    background: url("images/icon-search-post.png") no-repeat center center;
+    height: 60px;
+    cursor: pointer;
+}
+.search-form .icon-search-post.active
+{
+    background-color: #ebebeb;
+}
+.search-form .form-input
+{
+    display: none;
+    position: absolute;
+    height: 48px;
+    border: 1px solid #d7d7d7;
+    z-index: 9;
+    width: 360px;
+    right: 0;
+    top: 60px;
+    background: #fff;
+    font-size: 14px;
+}
+.search-form .form-input input
+{
+    border: none;
+    width: 90%;
+    height: 46px;
+    line-height: 46px;
+    padding-left: 15px;
+    outline: none;
+}
+.search-form .form-input button
+{
+    border: none;
+    background: transparent;
+    font-size: 18px;
+}
+
+.menu-blog-mobile-new{
+  background: #fff;
+  position: relative;
+}
+.menu-blog-mobile-new.show{
+  height: 100%;
+}
+.menu-blog-mobile-new.fixed, .menu-blog-mobile-new.show{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 999;
+}
+.menu-blog-mobile-new .menu-nav-mobile{
+  background: #0fd186;
+  font-size: 0;
+  text-align: center;
+}
+.menu-blog-mobile-new .menu-nav-mobile a{
+  display: inline-block;
+  width: 50%;
+  color: #fff;
+  padding: 0 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 44px;
+  font-weight: bold;
+  position: relative;
+}
+.menu-blog-mobile-new .menu-nav-mobile a.back-to-home{
+  width: 50%;
+  text-align: left;
+  padding:  0 20px;
+}
+.menu-blog-mobile-new .menu-nav-mobile a:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/icon-close.png') no-repeat center center #fff;
+  display: none;
+}
+.menu-blog-mobile-new .menu-nav-mobile a.active{
+  background: #fff;
+}
+.menu-blog-mobile-new .menu-nav-mobile a.active:after{
+  display: block;
+}
+.menu-blog-mobile-new .blog-cate-mobile, .menu-blog-mobile-new .today-reading{
+  display: none;
+  width: 100%;
+  background: #fff;
+  z-index: 9;
+}
+.menu-blog-mobile-new .blog-cate-mobile{
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  height: calc(100% - 44px);
+}
+
+.menu-blog-mobile-new .today-reading {
+  border: none;
+  border-radius: 0;
+  height: calc(100% - 44px);
+}
+.menu-blog-mobile-new .today-reading .title {
+  font-size: 14px;
+  color: #000;
+  line-height: 16px;
+  padding: 12px 15px;
+}
+.menu-blog-mobile-new .today-reading .title .icon-time{
+  width: 16px;
+  height: 16px;
+  background-size: 100% auto;
+}
+.menu-blog-mobile-new .today-reading .list-post{
+  padding: 0;
+}
+.menu-blog-mobile-new .today-reading .list-post .item{
+  padding: 15px;
+}
+.menu-blog-mobile-new .blog-cate-mobile{
+  padding-top: 17px;
+}
+.menu-blog-mobile-new .blog-cate-mobile ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu-blog-mobile-new .blog-cate-mobile > ul > li:first-child{
+  display: none;
+}
+.menu-blog-mobile-new .blog-cate-mobile ul li {
+  margin-bottom: 20px;
+}
+.menu-blog-mobile-new .blog-cate-mobile ul li a{
+  font-size: 16px;
+  line-height: 22px;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 15px;
+  display: block;
+}
+.menu-blog-mobile-new .blog-cate-mobile ul li.menu-item-has-children > a:after{
+  content: "";
+  font-size: 16px;
+  border: 5px solid transparent;
+  border-top-color: #c8c8c8;
+  line-height: 10px;
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.menu-blog-mobile-new .blog-cate-mobile ul .sub-menu{
+  display: none;
+  margin: 0 15px;
+  margin-top: 9px;
+  border-left: 1px solid #cacaca;
+}
+.menu-blog-mobile-new .blog-cate-mobile ul .sub-menu li{
+  margin-bottom: 0;
+  margin-left: 18px;
+}
+.menu-blog-mobile-new .blog-cate-mobile ul .sub-menu li a{
+  font-size: 15px;
+  text-transform: none;
+  font-weight: 400;
+  padding: 8px 0px;
+}
+.menu-blog-mobile-new .today-reading .list-post{
+  overflow-y: scroll;
+  height: calc(100% - 40px);
+  max-height: calc(100% - 40px);
+  -webkit-overflow-scrolling: touch;
+}
+
+/*======================================= Footer =========================================*/
+.footer {
+  background-color: #101215;
+  color: #7d8492; }
+
+.footer .title {
+  color: #d1d3d6;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 21px; }
+
+.footer .title a{
+  color: #d1d3d6;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 21px; }
+
+.footer a {
+  color: #7d8492;
+  display: inline-block;
+  font-size: 14px;
+  padding-bottom: 5px;
+  padding-top: 5px; }
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.footer span {
+  display: inline-block;
+  padding: 7px 0;
+  font-size: 14px; }
+.footer span b {
+    color: #d1d3d6;
+    font-size: 15px;
+}
+.footer i {
+  padding-right: 7px; }
+
+.footer span i:not(:first-child) {
+  padding-left: 5px; }
+
+.footer .text-infos {
+  color: #7d8492 !important; }
+
+.footer .footer-links {
+  padding-top: 36px; }
+
+.footer .line-gray-footer {
+  border-bottom: solid thin #40474e;
+  padding-bottom: 25px;
+  margin-bottom: 25px; }
+
+.footer .footer-copyright {
+  background-color: #101215;
+  color: #545a68;
+  padding: 5px 0;
+  border-top: 1px solid #24282e;
+  font-size: 13px; }
+
+.footer .footer-copyright span {
+  display: inline-block;
+  font-size: 13px; }
+
+.footer .clearfix.visible-sm-block {
+  margin-bottom: 25px; }
+
+.footer .footer-contact {
+  padding-bottom: 10px; }
+
+@media only screen and (min-width: 1247px) {
+  .footer .custom-row {
+    margin: 0 -75px; } }
+
+@media only screen and (min-width: 1200px) and (max-width: 1247px) {
+  .footer .custom-row {
+    margin: 0 -50px; } }
+
+@media only screen and (max-width: 1024px) and (min-width: 992px) {
+  .footer .custom-row {
+    margin: 0 -65px; } }
+
+@media only screen and (max-width: 992px) {
+  .footer .custom-row {
+    /*margin: 0 -75px;*/
+    /*margin:0 -90px;*/ } }
+
+.footer .icon-cup {
+  vertical-align: bottom; }
+
+@media only screen and (max-width: 768px) {
+  .footer .footer-copyright {
+    /*text-align: center;*/ }
+  .footer .footer-contact .col-md-9 {
+    padding-left: 15px; } }
+
+/*==================Home Forgot Password=======================*/
+#forget-div {
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  padding: 23px 60px 33px 50px;
+  width: 612px; }
+
+#forget-div .popup-login-divider {
+  padding: 0 7px; }
+
+#forget-div .popup-login-logo {
+  height: 40px; }
+
+#forget-div .popup-login-text {
+  color: #17a3dd;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  top: 5px; }
+
+@media only screen and (max-width: 669px) {
+  #forget-div {
+    width: 420px; } }
+
+@media only screen and (max-width: 469px) {
+  #forget-div {
+    padding: 23px 10px;
+    width: 300px; } }
+
+@media (max-width: 768px) {
+  #forget-div {
+    text-align: center; }
+  #forget-div .popup-login-divider {
+    display: none; }
+  #forget-div .popup-login-text, #forget-div .popup-login-text:before {
+    display: block; } }
+
+/*==================End of Forgot Password=====================*/
+.footer .padding-last {
+  /*padding-top:15px;*/
+  position: relative;
+  color: #818283; }
+
+.footer .padding-last a {
+  color: #545a68; }
+
+.footer .padding-copyright {
+  padding-top: 6px; }
+
+@media only screen and (min-width: 768px) {
+  .footer .border-last {
+    padding-bottom: 35px;
+    margin-bottom: 30px; } }
+
+@media only screen and (max-width: 768px) {
+  .footer .border-last {
+    padding-bottom: 25px;
+    margin-bottom: 30px; } }
+
+@media (min-width: 1200px) {
+  .footer .new-footer-col {
+    margin-left: -58px; }
+  .footer .contact-row {
+    margin-left: 34px; }
+  .footer .for-social {
+    padding-top: 35px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .footer .new-footer-col {
+    margin-left: -45px; }
+  .footer .contact-row {
+    margin-left: 50px; }
+  .footer .for-social {
+    padding-top: 35px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer .new-footer-col {
+    padding-left: 30px;
+    padding-right: 0px; }
+  .footer .contact-row {
+    margin-left: 23px; }
+  .footer .for-social {
+    padding-top: 35px; } }
+
+.footer .contact-row {
+  position: relative; }
+
+.footer .contact-row .bct {
+  position: absolute;
+  bottom: 10px;
+  right: 0px; }
+
+
+
+/*==================Home Forgot Password=======================*/
+#forget-div {
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    padding: 23px 60px 33px 50px;
+    width: 612px;
+}
+
+#forget-div .popup-login-divider {
+    padding: 0 7px;
+}
+
+#forget-div .popup-login-logo {
+    width: 135px;
+    height: 40px;
+}
+
+#forget-div .popup-login-text {
+    color: #17a3dd;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+}
+
+@media only screen and (max-width: 669px) {
+    #forget-div {
+        width: 420px;
+    }
+}
+
+@media only screen and (max-width: 469px) {
+    #forget-div {
+        padding: 23px 10px;
+        width: 300px;
+    }
+}
+
+@media (max-width : 768px) {
+    #forget-div {
+        text-align: center;
+    }
+
+    #forget-div .popup-login-divider {
+        display: none;
+    }
+
+    #forget-div .popup-login-text, #forget-div .popup-login-text:before {
+        display: block;
+    }
+}
+/*==================End of Forgot Password=====================*/
+
+.footer .padding-last {
+    /*padding-top:15px;*/
+    position: relative;
+    color: #818283;
+}
+
+.footer .padding-last a {
+    color: #818283;
+}
+
+.footer .padding-copyright {
+    padding-top: 6px;
+}
+
+@media only screen and (min-width:768px) {
+    .footer .border-last {
+        border-bottom: solid thin #2b2a32;
+        padding-bottom: 35px;
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .footer .border-last {
+        border-bottom: solid thin #2b2a32;
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+    }
+}
+@media (min-width : 1200px){
+    .footer .new-footer-col{
+        margin-left : -58px;
+    }
+    .footer .contact-row{
+        margin-left : 34px;
+    }
+    .footer .for-social{
+        padding-top : 35px;
+    }
+}
+@media (min-width : 992px) and (max-width : 1199px){
+    .footer .new-footer-col{
+        margin-left : -45px;
+    }
+    .footer .contact-row{
+        margin-left : 50px;
+    }
+    .footer .for-social{
+        padding-top : 35px;
+    }
+}
+@media (min-width : 768px) and (max-width : 991px){
+    .footer .new-footer-col{
+        padding-left : 30px;
+        padding-right : 0px;
+    }
+    .footer .contact-row{
+        margin-left : 23px;
+    }
+    .footer .for-social{
+        padding-top : 35px;
+    }
+}
+.footer .contact-row {
+    position : relative;
+}
+.footer .contact-row .bct{
+    position : absolute;
+    bottom : 10px;
+    right : 0px;
+}
+
+/* ================================== Index =============================*/
+#wrapper
+{
+    background: #eff0f2;
+    padding: 25px 0 0;
+}
+.main-content .block-1
+{
+    margin-bottom: 30px;
+}
+.main-content .block-1 .post-item
+{
+    position: relative;
+    max-height: 360px;
+    overflow: hidden;
+}
+.main-content .block-1 .post-item img
+{
+    width: 100%;
+}
+.main-content .block-1 .post-item .post-info
+{
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, 0.6);
+    padding: 16px 145px 25px 23px;
+
+}
+.main-content .block-1 .post-item .post-info .title
+{
+    font-size: 24px;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+.main-content .block-1 .post-item .post-info p
+{
+    color: #d9d9d9;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.main-content .block-1 .post-item .post-info p i
+{
+    margin-right: 5px;
+}
+.main-content .block-1 .post-item .post-info p i.fa-folder-o
+{
+    margin-left: 30px;
+}
+.main-content .block-1 .post-item .post-info p a
+{
+    font-size: 13px;
+    color: #d9d9d9;
+}
+.main-content .block-1 .swiper-button-prev
+{
+    width: 25px;
+    height: 25px;
+    background: url("images/index-slide-prev.png");
+    background-size: 100%;
+    bottom: 20px;
+    right: 59px;
+    left: auto;
+    top: auto;
+}
+.main-content .block-1 .swiper-button-prev:hover
+{
+    background: url("images/index-slide-prev-hv.png");
+    background-size: 100%;
+}
+.main-content .block-1 .swiper-button-next
+{
+    width: 25px;
+    height: 25px;
+    background: url("images/index-slide-next.png");
+    background-size: 100%;
+    bottom: 20px;
+    right: 24px;
+    left: auto;
+    top: auto;
+}
+.main-content .block-1 .swiper-button-next:hover
+{
+    background: url("images/index-slide-next-hv.png");
+    background-size: 100%;  
+}
+
+.main-content .block-1 .bizweb-trial-index
+{
+    background: url("images/bg-box-cta.png") no-repeat center center;
+    padding: 20px 15px;
+    color: #fff;
+    text-align: center;
+    background-size: cover;
+}
+.main-content .block-1 .bizweb-trial-index img {
+    max-width: 100%;
+}
+.main-content .block-1 .bizweb-trial-index p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+.main-content .block-1 .bizweb-trial-index span {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #afd5ff;
+    margin-bottom: 15px;
+}
+.main-content .block-1 .bizweb-trial-index .input-form
+{
+    background: url("images/icon-input-form-trial.png") no-repeat center center;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+.main-content .block-1 .bizweb-trial-index input
+{
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 48px;
+    padding: 0 30px;
+    margin-bottom: 20px;
+    color: #1d1d1d;
+    outline: none;
+}
+.main-content .block-1 .btn-registration
+{
+    height: 48px;
+    line-height: 48px;
+    border: none;
+    font-size: 17px;
+    width: 100%;
+}
+
+.main-content .block-2
+{
+    margin-bottom: 30px;
+}
+.main-content .block-2 .slide-topic
+{
+    position: relative;
+}
+.main-content .block-2 .slide-topic .topic-item
+{
+    text-align: center;
+}
+.main-content .block-2 .slide-topic .topic-item span.image
+{
+    display: block;
+    width: 49px;
+    height: 53px;
+    margin: 15px auto 30px;
+}
+.main-content .block-2 .slide-topic .topic-item span.image.nam-2017
+{
+    background: url("images/icon-kinh-doanh-2017.png") no-repeat center center;
+}
+.main-content .block-2 .slide-topic .topic-item a:hover span.image.nam-2017
+{
+    background: url("images/icon-kinh-doanh-2017-hv.png") no-repeat center center;
+}
+.main-content .block-2 .slide-topic .topic-item span.image.kd-nho
+{
+    background: url("images/icon-kinh-doanh-nho.png") no-repeat center center;
+}
+.main-content .block-2 .slide-topic .topic-item a:hover span.image.kd-nho
+{
+    background: url("images/icon-kinh-doanh-nho-hv.png") no-repeat center center;
+}
+.main-content .block-2 .slide-topic .topic-item span.image.kiem-tien
+{
+    background: url("images/icon-cach-kiem-tien.png") no-repeat center center;
+}
+.main-content .block-2 .slide-topic .topic-item a:hover span.image.kiem-tien
+{
+    background: url("images/icon-cach-kiem-tien-hv.png") no-repeat center center;
+}
+.main-content .block-2 .slide-topic .topic-item span.image.quan-ao
+{
+    background: url("images/icon-kinh-doanh-quan-ao.png") no-repeat center center;
+}
+.main-content .block-2 .slide-topic .topic-item a:hover span.image.quan-ao
+{
+    background: url("images/icon-kinh-doanh-quan-ao-hv.png") no-repeat center center;
+}
+.main-content .block-2 .slide-topic .topic-item span.image.my-pham
+{
+    background: url("images/icon-kinh-doanh-my-pham.png") no-repeat center center;
+}
+.main-content .block-2 .slide-topic .topic-item a:hover span.image.my-pham
+{
+    background: url("images/icon-kinh-doanh-my-pham-hv.png") no-repeat center center;
+}
+.main-content .block-2 .slide-topic .topic-item span.image.trang-suc
+{
+    background: url("images/icon-kinh-doanh-trang-suc.png") no-repeat center center;
+}
+.main-content .block-2 .slide-topic .topic-item a:hover span.image.trang-suc
+{
+    background: url("images/icon-kinh-doanh-trang-suc-hv.png") no-repeat center center;
+}
+.main-content .block-2 .slide-topic .topic-item span.title
+{
+    display: block;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 16px;
+    color: #3e3d3c;
+    padding: 15px 0;
+}
+.main-content .block-2 .slide-topic .topic-item a:hover
+{
+    text-decoration: none;
+}
+.main-content .block-2 .slide-topic .topic-item a:hover span.title
+{
+    text-decoration: none;
+    color: #0fd186;
+}
+.main-content .block-2 .slide-topic .swiper-button-next,
+.main-content .block-2 .slide-topic .swiper-button-prev
+{
+    background: url(images/topic-slide-next.png) no-repeat center center;
+    width: 31px;
+    height: 31px;
+    right: -35px;
+}
+.main-content .block-2 .slide-topic .swiper-button-next:hover
+{
+    background: url(images/topic-slide-next-hv.png) no-repeat center center;
+}
+.main-content .block-2 .slide-topic .swiper-button-prev
+{
+    background: url(images/topic-slide-prev.png) no-repeat center center;
+    left: -35px;
+    right: auto;
+}
+.main-content .block-2 .slide-topic .swiper-button-prev:hover
+{
+    background: url(images/topic-slide-prev-hv.png) no-repeat center center;
+}
+
+.main-content .block-3
+{
+
+}
+.main-content .block-3 .abstract
+{
+    margin: 10px auto;
+    font-size: 14px;
+    color: #646464;
+    text-align: center;
+}
+.main-content .block-3 .register-email {
+    background: url(https://www.sapo.vn/blog/wp-content/themes/ver2018/images/bg-email-subscribe.jpg) center center;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    padding: 30px 25px;
+    margin-bottom: 30px;
+}
+.main-content .block-3 .register-email label
+{
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.main-content .block-3 .register-email .form-input
+{
+    position: relative;
+}
+.main-content .block-3 .register-email .form-input input
+{
+    border: none;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 25px;
+    border-radius: 23px;
+    width: 100%;
+    color: #1d1d1d;
+    outline: none;
+}
+.main-content .block-3 .register-email .form-input button
+{
+    position: absolute;
+    border: none;
+    background: transparent;
+    top: 7px;
+    right: 10px;
+    font-size: 18px;
+    color: #6ebd3e;
+}
+.main-content .block-3 .post-item
+{
+    margin-bottom: 35px;
+    background: #fff;
+    border: 1px solid #e6e5e5;
+    border-radius: 5px;
+    min-height: 445px;
+    overflow: hidden;
+}
+.main-content .block-3 .post-item:hover
+{
+    box-shadow: 0 0 50px #dfe0e2;
+}
+.main-content .block-3 .post-item .post-thumb
+{
+    position: relative;
+    border-bottom: 2px solid #0fd186;
+}
+.main-content .block-3 .post-item .post-thumb a.img-thumb
+{
+    height: 210px;
+    overflow: hidden;
+    display: block;
+}
+.main-content .block-3 .post-item .post-thumb img
+{
+    width: auto;
+    height: 100%;
+}
+.main-content .block-3 .post-item .post-thumb .cate-post
+{
+    display: inline-block;
+    position: absolute;
+    bottom: -11px;
+    left: 25px;
+}
+.main-content .block-3 .post-item .post-thumb .cate-post ul
+{
+    margin: 0 0;
+    padding: 0 0;
+    list-style: none;
+}
+.main-content .block-3 .post-item .post-thumb .cate-post ul li
+{
+    margin: 0 0;
+    padding: 0 0;
+}
+.main-content .block-3 .post-item .post-thumb .cate-post a
+{
+    display: inline-block;
+    font-size: 13px;
+    color: #fff;
+    background: #0fd186;
+    padding: 2px 15px;
+    border-radius: 4px;
+}
+.main-content .block-3 .post-item .post-info
+{
+    font-size: 13px;
+    color: #aaa;
+    padding: 30px 25px 15px;
+}
+.main-content .block-3 .post-item a.title
+{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #3e3d3c;
+    padding: 0 25px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+.main-content .block-3 .post-item .desc
+{
+    padding: 0 25px;
+}
+.main-content .block-3 .post-item .desc .excerpt-read-more
+{
+    display: none;
+}
+
+/* ========================= Pagination ==================================== */
+.wp-pagenavi
+{
+    text-align: center;
+    font-size: 16px;
+    margin: 35px 0 70px;
+}
+.wp-pagenavi span.current
+{
+    display: inline-block;
+    font-weight: bold;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #0fd186;
+    border-radius: 3px;
+    color: #0fd186;
+    line-height: 36px;
+    font-size: 16px;
+    font-family: "Roboto";
+    padding: 0 0;
+    margin: 0 10px 0 0;
+    background: transparent;
+}
+.wp-pagenavi a.page,
+.wp-pagenavi span.extend,
+.wp-pagenavi a.nextpostslink,
+.wp-pagenavi a.previouspostslink
+{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 10px 0 0;
+    font-size: 16px;
+    color: #3e3d3c;
+    font-family: "Roboto";
+    padding: 0 0;
+    background: transparent;
+}
+.wp-pagenavi a.nextpostslink,
+.wp-pagenavi a.previouspostslink
+{
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+}
+.wp-pagenavi a.page:hover,
+.wp-pagenavi a.nextpostslink:hover,
+.wp-pagenavi a.previouspostslink:hover
+{
+    border-radius: 3px;
+    background: #0fd186;
+    color: #fff;
+    text-decoration: none;
+}
+.wp-pagenavi a.last,
+.wp-pagenavi a.first
+{
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #3e3d3c;
+    margin: 0 10px 0 0;
+    background: transparent;
+}
+.wp-pagenavi a.last:hover,
+.wp-pagenavi a.first:hover
+{
+    background: #0fd186;
+    color: #fff;
+    text-decoration: none;
+}
+.wp-pagenavi a.first
+{
+    margin-right: 10px;
+}
+
+.page_nav {
+    text-align: center;
+    margin: 30px 0;
+}
+.page_nav .page-numbers {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-decoration: none;
+    border: 1px solid #BFBFBF;
+    margin: 2px;
+    font-size: 16px;
+    color: #3e3d3c;
+    padding: 0 0;
+    background: transparent;
+    border-radius: 3px;
+}
+.page_nav a.page-numbers:hover {
+    border: 1px solid #0fd186;
+    background-color: #0fd186;
+    color: #fff;
+}
+.page_nav .page-numbers.current
+{
+    border: 1px solid #0fd186;
+    color: #0fd186;
+}
+.page_nav .page-numbers.dots
+{
+    border: none;
+    color: #3e3d3c;
+}
+/* ================================ Trial Bottom =================================== */
+.trial-bizweb-bottom{
+    padding-top: 35px;
+    background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/bg-trial-bizweb.jpg') no-repeat top center;
+    text-align: center;
+}
+.trial-bizweb-bottom p{
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 0 19px;
+}
+.trial-bizweb-bottom p span{
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+}
+.trial-bizweb-bottom a{
+    margin: 0 0 37px;
+    background: #ffffff;
+    color: #0fd186;
+    font-size:  16px;
+    line-height: 49px;
+    height: 49px;
+}
+.trial-bizweb-bottom a:hover, .trial-bizweb-bottom a:focus{
+    background: #fff;
+    color: #0fd186;
+}
+/* ================================== Category =================================== */
+.category-posts .feature-post
+{
+    margin-bottom: 30px;
+}
+.category-posts .feature-post .feature-item
+{
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #e6e5e5;
+    background: #fff;
+}
+.category-posts .feature-post .feature-item .image-thumb
+{
+    display: block;
+    width: 260px;
+    height: 305px;
+    float: left;
+    overflow: hidden;
+    border-right: 2px solid #0fd186;
+}
+.category-posts .feature-post .feature-item .image-thumb img
+{
+    height: 100%;
+    width: auto;
+}
+.category-posts .feature-post .feature-item .post-info
+{
+    margin-left: 260px;
+    padding: 0 30px;
+}
+.category-posts .feature-post .feature-item .post-info .category ul
+{
+    padding: 0 0;
+    margin: 30px 0 20px;
+    list-style: none;
+}
+.category-posts .feature-post .feature-item .post-info .category a
+{
+    font-size: 14px;
+    color: #0fd186;
+}
+.category-posts .feature-post .feature-item .post-info .title
+{
+    font-size: 20px;
+    font-weight: 700;
+    color: #3e3d3c;
+    display: block;
+    margin-bottom: 20px;
+}
+.category-posts .feature-post .feature-item .post-info .desc
+{
+    font-size: 14px;
+    color: #595959;
+    margin-bottom: 30px;
+}
+.category-posts .feature-post .feature-item .post-info .desc .excerpt-read-more
+{
+    display: none;
+}
+.category-posts .feature-post .feature-item .post-info .post-statistic
+{
+    font-size: 13px;
+    color: #aaa;
+}
+.category-posts .feature-post .feature-item .post-info .post-statistic .publish-date
+{
+    display: inline-block;
+    float: left;
+}
+.category-posts .feature-post .feature-item .post-info .post-statistic .view-count
+{
+    display: inline-block;
+    float: right;
+}
+
+/* ======================================= Chi tiet bai viet ============================================= */
+.breadcrumb
+{
+    background: #efefef;
+    padding: 15px 0;
+}
+.breadcrumb ul
+{
+    margin: 0 0;
+    padding: 0 0;
+    list-style: none;
+}
+.breadcrumb li
+{
+    float: left;
+}
+.breadcrumb li a
+{
+    font-size: 13px;
+    color: #8b8b8b;
+    display: inline-block;
+    margin-right: 5px;
+}
+.breadcrumb li a:hover
+{
+    color: #0fd186;
+}
+.breadcrumb li span.seperate
+{
+    display: inline-block;
+    margin-right: 5px;
+    color: #8b8b8b;
+    font-size: 14px;
+}
+.post-content .container {
+    position: relative;
+}
+.post-content h1
+{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: absolute;
+    bottom: 66px;
+    padding-bottom: 24px;
+    margin-top: 0;
+}
+.post-content h1:after{
+    content: "";
+    width: 318px;
+    height: 1px;
+    background: #2b9b6a;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+.post-content .post-info
+{
+    font-size: 16px;
+    color: #8b8b8b;
+    position: absolute;
+    bottom: 40px;
+}
+.post-content .post-info i
+{
+    color: #fff;
+}
+.post-content .post-info .post-publish
+{
+    margin-right: 35px;
+    color: #fff;
+}
+.post-content .post-info .post-cate
+{
+    color: #fff;
+}
+.post-content .post-info .post-view {
+    color: #fff;
+}
+.post-content .post-info .post-cate ul
+{
+    padding: 0 0;
+    margin: 0 0;
+    list-style: none;
+    display: inline-block;
+    margin-right: 35px;
+}
+.post-content .post-info .post-cate ul a
+{
+    color: #fff;
+}
+.post-content .post-info .post-cate ul a:hover
+{
+    text-decoration: underline;
+}
+.post-content .post-image-feature
+{
+    position: relative;
+    max-height: 230px;
+    min-height: 185px;
+    overflow: hidden;
+    width: 100%;
+}
+.post-content .post-image-feature .shadow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.7;
+    height: 100%;
+}
+.post-content .post-image-feature img
+{
+    width: 100%;
+    height: auto;
+}
+.post-content .post-image-feature .container{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+}
+.post-content .detail-content
+{
+    font-size: 17px;
+    color: #2d2d2d;
+    font-family: "Noto Serif";
+    line-height: 32px;
+    padding: 45px;
+}
+.post-content .detail-content > div:not(.kk-star-ratings) {
+    width: auto !important;
+}
+.post-content .detail-content h4
+{
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    color: #555;
+}
+.post-content .detail-content h2 {
+    font-size: 28px;
+    margin: 30px 0;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+.post-content .detail-content h3 {
+    font-size: 24px;
+    margin: 30px 0;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+.post-content .detail-content h3
+{
+    font-size: 18px;
+}
+.post-content .detail-content h4
+{
+    font-size: 16px;
+}
+.post-content .detail-content a
+{
+    color: #1c95d2;
+}
+.post-content .detail-content ul,
+.post-content .detail-content ol
+{
+    list-style: none;
+    padding: 0 0;
+}
+.post-content .detail-content ul,
+.post-content .detail-content ol{
+    list-style-position: outside;
+    padding-left: 35px;
+	margin-top: 10px;
+}
+.post-content .detail-content img
+{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+.post-content .detail-content p
+{
+    margin-bottom: 25px;
+}
+.post-content .related-post
+{
+    padding: 30px 0;
+    margin: 0 0 20px;
+    background: url(https://www.sapo.vn/blog/wp-content/themes/ver2018/images/boder-seperate.jpg) no-repeat center top, url(https://www.sapo.vn/blog/wp-content/themes/ver2018/images/boder-seperate.jpg) no-repeat center bottom;
+}
+.post-content .related-post .title
+{
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+.post-content .related-post .title i{
+    margin-right: 5px;
+    background: url(https://www.sapo.vn/blog/wp-content/themes/ver2018/images/icon-blog-related.png) no-repeat;
+    width: 25px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: top;
+}
+.post-content .related-post .relate-item {
+    margin-bottom: 30px;
+}
+.post-content .related-post .relate-item a.thumb-image {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.post-content .related-post .relate-item a.thumb-image .view {
+    position: absolute;
+    z-index: 9;
+    background: rgba(0,0,0,0.72);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 15px;
+}
+.post-content .related-post .relate-item a.thumb-image .view .fa {
+    color: #0fd186;
+}
+.post-content .related-post .relate-item img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    transition-duration: 1s;
+}
+.post-content .related-post .relate-item img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.post-content .related-post .post-categories {
+    list-style: none;
+    padding: 0 0;
+    margin: 10px 0;
+}
+.post-content .related-post .post-categories a {
+    font-size: 13px;
+    color: #0fd186;
+}
+.post-content .related-post .post-categories li {
+    display: none;
+}
+.post-content .related-post .post-categories li:first-child {
+    display: block;
+}
+.post-content .related-post .col-md-4:nth-child(n+4){
+    display: none;
+}
+.post-content .related-post .relate-item{
+    text-align: left;
+}
+.post-content .related-post .relate-item .post-title
+{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #3e3d3c;
+    margin-top: 10px;
+    display: block;
+    height: 48px;
+    overflow: hidden;
+}
+.post-content .related-post .btn-viewmore{
+    display: inline-block;
+    font-size: 16px;
+    color: #333333;
+    position: relative;
+    padding-top: 20px;
+}
+.post-content .related-post .btn-viewmore:after, .post-content .related-post .btn-viewmore:before {
+  top: 0;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.post-content .related-post .btn-viewmore:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #fff;
+  border-width: 10px;
+  margin-left: -10px;
+}
+.post-content .related-post .btn-viewmore:before {
+  border-color: rgba(54, 216, 153, 0);
+  border-top-color: #36d899;
+  border-width: 13px;
+  margin-left: -13px;
+}
+.post-content .related-post .swiper-pagination {
+    position: static;
+    margin-top: 15px;
+}
+.post-content .related-post .swiper-button-prev {
+    background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-left-hv.png') no-repeat center center;
+    width: 33px;
+    height: 67px;
+    left: 0;
+    top: 26%;
+}
+.post-content .related-post .swiper-button-prev:hover {
+    background: url("https://www.sapo.vn/blog/wp-content/themes/ver2018/images/relate-prev-hv.png") no-repeat center center;
+}
+.post-content .related-post .swiper-button-next {
+    background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-right.png') no-repeat center center;
+    width: 33px;
+    height: 67px;
+    right: 0;
+    top: 26%;
+}
+.post-content .related-post .swiper-button-next:hover {
+    background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-right-hv.png') no-repeat center center;
+}
+.post-content .social-post{
+    padding:  0 45px;
+}
+.post-content .post-tags
+{
+    font-size: 14px;
+    text-align: left;
+    padding:  0 45px;
+    padding-bottom: 20px;
+}
+.post-content .post-tags span.tag-title{
+  font-size: 16px;
+  color: #696969;
+  display: inline-block;
+  margin-right: 25px; 
+}
+.post-content .post-tags a
+{
+    display: inline-block;
+    padding: 5px 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #696969;
+    border-radius: 16px;
+    border: 1px solid #cccccc;
+}
+.post-content .post-tags a:hover
+{
+    color: #41b75e;
+    border-color: #41b75e;
+    text-decoration: none;
+}
+.post-content .social-post:after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+.post-content .social-post .fb-like
+{
+    display: inline-block;
+}
+.post-content .social-post .fb-share-button {
+    float: left;
+    margin-right: 10px;
+}
+.post-content .social-post .gplus {
+    float: left;
+    width: 40px;
+}
+
+.post-content .download-ebook{
+  height: 448px;
+  background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/img-download-book.jpg') no-repeat center top;
+}
+.post-content .download-ebook .ebook-content{
+  padding-top: 117px;
+}
+.download-ebook .ebook-content span{
+  font-size: 18px;
+  line-height: 32px;
+  color: #333;
+  margin-bottom: 2px;
+  font-weight: bold;
+  display: block;
+}
+.post-content .download-ebook .ebook-content span.ebook-name{
+  font-size: 36px;
+  color: #ec6c1f;
+  margin-bottom: 19px;
+}
+.post-content .download-ebook .ebook-content p{
+  font-size: 17px;
+  line-height: 26px;
+  margin-bottom: 23px;
+}
+.post-content .download-ebook .ebook-content .btn-registration{
+  background: #ec6c1f;
+  font-weight: 400;
+  font-size: 18px;
+  height: 51px;
+  line-height: 51px;
+  padding: 0px 39px;
+}
+
+.post-content .download-ebook.tips {
+  background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/10biquyet.jpg') no-repeat center top;
+}
+.post-content .download-ebook.tips .ebook-content{
+  padding-top: 50px;
+}
+.download-ebook.tips .ebook-content span {
+  font-weight: 500;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.post-content .download-ebook.tips .ebook-content span.ebook-name {
+  color: #d33b3c;
+  font-size: 47px;
+  line-height: 52px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.post-content .download-ebook.tips .ebook-content p{
+  font-size: 16px;
+  color: #d33b3c;
+}
+.post-content .download-ebook.tips .ebook-content .btn-registration {
+  background: #d21e20;
+  color: #fff;
+  padding: 0 50px;
+}
+
+.post-content .subscribe-registration
+{
+    background: url("images/bg-subscribe.jpg") center center;
+    color: #fff;
+    padding: 50px 20px;
+    margin: 0 0 30px;
+}
+.post-content .subscribe-registration h3
+{
+    margin: 0 0 15px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+}
+.post-content .subscribe-registration .form-subscribe
+{
+    position: relative;
+}
+.post-content .subscribe-registration .form-subscribe input
+{
+    border: none;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 22px;
+    width: 100%;
+    padding: 0 40px 0 20px;
+    font-size: 14px;
+    color: #2d2d2d;
+    outline: none;
+}
+.post-content .subscribe-registration .form-subscribe button
+{
+    border: none;
+    background: none;
+    color: #6ebd3e;
+    position: absolute;
+    right: 20px;
+    top: 9px;
+    font-size: 18px;
+}
+
+.post-content .should-read
+{
+    margin-bottom: 40px;
+    position: relative;
+}
+.post-content .should-read .title
+{
+    font-size: 24px;
+    font-weight: 700;
+    color: #373737;
+    margin-bottom: 20px;
+}
+.post-content .should-read .other-item .image-thumb
+{
+    height: 175px;
+    overflow: hidden;
+    display: block;
+}
+.post-content .should-read .other-item img
+{
+    width: 100%;
+    height: auto;
+}
+.post-content .should-read .other-item .shadow-item
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+.post-content .should-read .other-item .post-info
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 20px 30px;
+    color: #fff;
+    z-index: 9;
+}
+.post-content .should-read .other-item .post-info a
+{
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 15px;
+    display: block;
+    color: #fff;
+}
+.post-content .should-read .other-item .post-info .post-publish,
+.post-content .should-read .other-item .post-info .post-view
+{
+    font-size: 13px;
+}
+.post-content .should-read .swiper-button-prev
+{
+    background: url("images/topic-slide-prev.png") no-repeat center center;
+    width: 31px;
+    height: 31px;
+    left: -41px;
+    top: 65%;
+}
+.post-content .should-read .swiper-button-prev:hover
+{
+    background: url("images/topic-slide-prev-hv.png") no-repeat center center;
+}
+.post-content .should-read .swiper-button-next
+{
+    background: url("images/topic-slide-next.png") no-repeat center center;
+    width: 31px;
+    height: 31px;
+    right: -41px;
+    top: 65%;
+}
+.post-content .should-read .swiper-button-next:hover
+{
+    background: url("images/topic-slide-next-hv.png") no-repeat center center;
+}
+.post-content .should-read .swiper-pagination {
+    position: static;
+    text-align: center;
+}
+.post-content .should-read .swiper-pagination .swiper-pagination-bullet {
+    margin-right: 5px;
+}
+/* ================================== TAGS ================================== */
+.tag-posts h1
+{
+    font-size: 24px;
+    font-weight: 300;
+    margin: 20px 0 30px;
+}
+.tag-posts h1 span
+{
+    font-weight: 700;
+}
+/* ================================== SEARCH ================================== */
+.search-posts h1
+{
+    font-size: 24px;
+    font-weight: 300;
+    margin: 20px 0 30px;
+}
+.search-posts h1 span
+{
+    font-weight: 700;
+}
+
+@media (max-width: 767px)
+{
+    .no-padding-xs
+    {
+        padding: 0 0;
+    }
+}
+
+/* 404 layout */
+.layout-404
+{
+    color: #3b3b3a;
+    padding: 40px 0;
+}
+.layout-404 h1
+{
+    text-transform: uppercase;
+    font-size: 54px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.layout-404 h1 span
+{
+    font-size: 100px;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+.layout-404 h3
+{
+    font-size: 20px;
+}
+.layout-404 p
+{
+    font-size: 16px;
+}
+.layout-404 .search-form
+{
+    position: relative;
+    margin: 15px 0 30px;
+    float: none;
+}
+.layout-404 .search-form input
+{
+    height: 50px;
+    line-height: 48px;
+    border: 1px solid #e1e1e1;
+    padding: 0 25px;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 25px;
+}
+.layout-404 .search-form button
+{
+    position:  absolute;
+    right: 15px;
+    top: 10px;
+    border: none;
+    background: none;
+}
+.layout-404 .search-form button i
+{
+    font-size: 30px;
+    color: #dbdbdb;;
+}
+.layout-404 a.back-home
+{
+    background: #7fc143;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 40px;
+    border-radius: 25px;
+}
+.layout-404 .relate-topic h3
+{
+    text-align: left;
+}
+.layout-404 .relate-topic li
+{
+    text-align: left;
+    list-style: disc outside;
+    margin-left: 25px;
+    color: #d5d5d5;
+    font-size: 20px;
+}
+.layout-404 .relate-topic li a
+{
+    font-size: 16px;
+    color: #3b3b3a;
+}
+
+/* fancybox */
+.new-fancybox-close {
+    background: url(https://www.bizweb.vn/Themes/Portal/Default/Images/popup/bt_close.png);
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    right: 120px;
+    top: 0;
+}
+
+/* CTA Box 1 */
+
+.cta-box-1
+{
+    color: #fff;
+    background: #4267b2;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: "Roboto";
+    line-height: normal;
+}
+.cta-box-1 .image
+{
+    float: left;
+    width: 144px;
+    height: 144px;
+    overflow: hidden;
+}
+.cta-box-1 .image img
+{
+    width: 100%;
+    height: auto;
+}
+.cta-box-1 .info
+{
+    margin-left: 180px;
+}
+.cta-box-1 .info a
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    margin-bottom: 20px;
+    font-family: "Roboto";
+}
+.cta-box-1 .info p
+{
+    font-size: 14px;
+    color: #d3f0ff;
+    font-family: "Roboto";
+}
+.cta-box-1 .conclusion
+{
+    border-top: 1px solid #567ecf;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: right;
+    font-size: 14px;
+    font-family: "Roboto";
+}
+.cta-box-1 .conclusion a
+{
+    color: #fae005;
+    font-weight: 700;
+}
+
+/* CTA Box 2 */
+.cta-box-2
+{
+    color: #fff;
+    background: #4267b2;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: "Roboto";
+    line-height: normal;
+}
+.cta-box-2 .info .title
+{
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    margin-bottom: 15px;
+    font-family: "Roboto";
+}
+.cta-box-2 .info .desc
+{
+    font-size: 16px;
+    color: #aee4ff;
+    margin-bottom: 20px;
+    font-family: "Roboto";
+}
+.cta-box-2 .info .view-detail
+{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #7fc142;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 40px;
+    border-radius: 25px;
+    font-family: "Roboto";
+}
+
+/* CTA Box 3 */
+.cta-box-3
+{
+    color: #fff;
+    background: url("https://www.sapo.vn/blog/wp-content/themes/ver2018/images/bg-box-3.png") no-repeat top left;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: "Roboto";
+    line-height: normal;
+}
+.cta-box-3 .info h3.title
+{
+    font-size: 18px;
+    line-height: normal;
+    margin-left: 95px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: "Roboto";
+}
+.cta-box-3 .col-md-4
+{
+    text-align: center;
+}
+.cta-box-3 a .image
+{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.cta-box-3 a .image img
+{
+    width: 100%;
+}
+.cta-box-3 a .title
+{
+    display: inline-block;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+/* CTA Box 4*/
+.cta-box-4 {
+    padding: 20px;
+    border-top: 1px dashed #dddddd;
+    border-bottom: 1px dashed #dddddd;
+    margin: 20px 0;
+}
+.cta-box-4 .box-thumb {
+    width: 145px;
+    float: left;
+}
+.cta-box-4 .box-thumb img {
+    max-width: 100%;
+}
+.cta-box-4 .box-info {
+    margin-left: 175px;
+}
+.cta-box-4 .box-info a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5e5e5e;
+}
+.cta-box-4 .box-info p {
+    font-size: 14px;
+    color: #646464;
+    line-height: 22px;
+    margin-top: 15px;
+}
+.cta-box-4 .box-info p a
+{
+    color: #0fd186;
+    font-size: 14px;
+}
+
+.detail-content .post-schedule {
+    padding: 20px 30px 10px 30px;
+    background: #eff0f3;
+    margin-bottom: 20px;
+}
+.detail-content .post-schedule .title-schedule {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2d2d2d;
+    margin-bottom: 15px;
+}
+.detail-content .post-schedule ul {
+    padding: 0 0;
+    margin: 0 0;
+    list-style: none;
+}
+.detail-content .post-schedule li {
+    border-top: 1px dashed #cccccc;
+    padding: 13px 0;
+}
+.detail-content .post-schedule li a {
+    color: #474848;
+    font-size: 17px;
+}
+.detail-content .post-schedule li a:hover {
+    text-decoration: none;
+    color: #0fd186;
+}
+
+.post-content .nav-topic {
+    position: fixed;
+    top: 90px;
+    left: 35px;
+    z-index: 8;
+    list-style: none;
+    margin: 0 0 0 -30px;
+    padding: 0 0;
+    box-shadow: #f2f2f4 0 0 15px 5px;
+    background: #fff;
+    border-radius: 3px;
+}
+.post-content .nav-topic li {
+    color: #444;
+    font-size: 14px;
+}
+.post-content .nav-topic li a {
+    display: block;
+    padding: 10px 20px;
+    border-left: 3px solid #ffff;
+    border-bottom: 1px solid #e2e6f0;
+    color: #4d5771;
+}
+.post-content .nav-topic li a:hover {
+    border-left: 3px solid #0fd186;
+    border-bottom: 1px solid #eef6ff;
+    background: #eef6ff;
+    text-decoration: none;
+    color: #0fd186;
+}
+.post-content .nav-topic li i {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+.post-content .nav-topic li i.icon-kd2018 {
+    background: url(images/icon-kd2018.png) no-repeat center left;
+}
+.post-content .nav-topic li a:hover i.icon-kd2018 {
+    background: url(images/icon-kd2018-hv.png) no-repeat center left;
+}
+.post-content .nav-topic li i.icon-kdtet {
+    background: url(images/icon-kdtet.png) no-repeat center left;
+}
+.post-content .nav-topic li a:hover i.icon-kdtet {
+    background: url(images/icon-kdtet-hv.png) no-repeat center left;
+}
+.post-content .nav-topic li i.icon-kdhoatet {
+    background: url(images/icon-top-hot.png) no-repeat top -85px left 0;
+}
+.post-content .nav-topic li a:hover i.icon-kdhoatet {
+    background: url(images/icon-top-hot-hv.png) no-repeat top -85px left 0;
+}
+.post-content .nav-topic li i.icon-kdnho {
+    background: url(images/icon-kdnho.png) no-repeat center left;
+}
+.post-content .nav-topic li a:hover i.icon-kdnho {
+    background: url(images/icon-kdnho-hv.png) no-repeat center left;
+}
+.post-content .nav-topic li i.icon-kdquanao {
+    background: url(images/icon-top-hot.png) no-repeat top 5px left 0;
+}
+.post-content .nav-topic li a:hover i.icon-kdquanao {
+    background: url(images/icon-top-hot-hv.png) no-repeat top 5px left 0;
+}
+.post-content .nav-social li img {
+}
+
+#post-detail .breadcrumb {
+    margin-bottom: 0;
+}
+
+.post-content .topic-hot .topic-title {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.post-content .topic-hot .bg-shadow {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.6;
+    z-index: 9;
+}
+.post-content .topic-hot .list-topics {
+    position: fixed;
+    top: 0;
+    left: -999px;
+    background: #fff;
+    bottom: 0;
+    z-index: 10;
+}
+.post-content .topic-hot .list-topics .hide-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: #363636;
+    cursor: pointer;
+    z-index: 9;
+}
+.post-content .topic-hot .list-topics ul {
+    list-style: none;
+    margin: 0 0;
+    padding:  30px 30px 0;
+}
+.post-content .topic-hot .list-topics ul li {
+    padding: 10px 10px 10px 40px;
+    border-bottom: 1px solid #dedede;
+    background: url(https://www.sapo.vn/blog/wp-content/themes/ver2018/images/icon-top-hot.png) no-repeat top left;
+}
+.post-content .topic-hot .list-topics ul li.kd-2017 {
+    background-position: top -765px left 0;
+}
+.post-content .topic-hot .list-topics ul li.quan-ao {
+    background-position: top 10px left 0;
+}
+.post-content .topic-hot .list-topics ul li.kiem-tien {
+    background-position: top -684px left 0;
+}
+.post-content .topic-hot .list-topics ul li.kd-nho {
+    background-position: top -645px left 0;
+}
+.post-content .topic-hot .list-topics ul li.kd-quan-ao {
+    background-position: top 10px left 0;
+}
+.post-content .topic-hot .list-topics ul li.bh-facebook {
+    background-position: top -205px left 0;
+}
+.post-content .topic-hot .list-topics ul li a {
+    color: #363636;
+    font-size: 15px;
+}
+
+.post-content .feature-topic {
+    margin-bottom: 0;
+}
+.post-content .trial-bizweb-bottom {
+    background: #1774bd;
+}
+.feature-topic {
+    background: url("images/bg-feature-topic.png") no-repeat center top;
+    color: #fff;
+    padding: 40px 0;
+    margin-bottom: 35px;
+    background-size: cover;
+    position: relative;
+}
+.feature-topic .title {
+    margin: 0 0 30px;
+    padding:  0 15px;
+    text-align: center;
+    font-size: 30px;
+}
+.feature-topic .topic-item {
+
+}
+.feature-topic .topic-item a{
+    display: block;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 5px #141414;
+}
+.feature-topic .topic-item a:hover img{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.feature-topic .topic-item img{
+    width: 100%;
+    transition-duration: 1s;
+}
+.post-content .feature-topic  .swiper-button-prev, .post-content .feature-topic  .swiper-button-next {
+    width: 33px;
+    height: 68px;
+    background: #fff;
+    top: 50%;
+    margin-top: -34px;
+}
+.post-content .feature-topic .swiper-button-prev {
+    background: url(https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-left.png) no-repeat center center;
+    left: 0px;
+}
+.post-content .feature-topic .swiper-button-prev:hover {
+    background: url(https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-left-hv.png) no-repeat center center;
+}
+.post-content .feature-topic .swiper-button-next {
+    background: url(https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-right.png) no-repeat center center;
+    right: 0px;
+}
+.post-content .feature-topic .swiper-button-next:hover {
+    background: url(https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-right-hv.png) no-repeat center center;
+}
+.feature-topic .topic-item .topic-info {
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: none;
+}
+.feature-topic .topic-item .topic-info .type {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.feature-topic .topic-item .topic-info .title {
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  margin: 10px 60px 0;
+  padding: 0 0 10px;
+  font-weight: 300;
+}
+
+.feature-topic .topic-item .thumb-image:hover .topic-info {
+  display: block;
+}
+.feature-topic .topic-item .thumb-image:hover img {
+  opacity: 0.3;
+}
+
+.hot-topic{
+  background: #252525;
+  border-radius: 5px;
+  position: relative;
+  padding-bottom: 36px;
+}
+.hot-topic .title{
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 42px;
+  padding: 18px 30px 0px;
+}
+.hot-topic .title .icon-coffee{
+  background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/icon-coffee.png') no-repeat center center;
+  width: 29px;
+  height: 30px;
+  margin-right: 7px;
+  display: inline-block;
+  vertical-align: top;
+}
+.hot-topic .item {
+  position: relative;
+  box-shadow: 0px 0px 16px 0px rgba(1, 1, 1, 1);
+  border-radius: 5px;
+}
+.hot-topic .item a:before {
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.hot-topic .item a:hover:before{
+    opacity: 1;
+    visibility: visible;
+}
+.hot-topic .item a:hover .title{
+    opacity: 1;
+    visibility: visible;
+}
+.hot-topic .item img {
+    width: 100%;
+}
+.hot-topic .item .title{
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: none;
+    text-align: center;
+    display: block;
+    position: absolute;
+    transform: translateY(-50%);
+    padding: 0;
+    width: 100%;
+    top: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.hot-topic .item .title:after{
+    content: "";
+    width: 70px;
+    height: 1px;
+    background: #fff;
+    bottom: 0;
+    left: 50%;
+    transform:  translateX(-50%);
+    position: absolute;
+}
+.hot-topic .item .title span{
+    display: block;
+    position: relative;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 5px 0 13px;
+}
+.hot-topic .swiper-container{
+    padding-top: 12px;
+    margin-left: 30px;
+    padding-bottom: 12px;
+    z-index: auto;
+}
+.hot-topic .swiper-button-prev,
+.hot-topic .swiper-button-next{
+    width: 33px;
+    height: 68px;
+    background: #fff;
+}
+.hot-topic .swiper-button-prev.swiper-button-disabled,
+.hot-topic .swiper-button-next.swiper-button-disabled{
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: auto;
+}
+.hot-topic .swiper-button-prev {
+    background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-left.png') no-repeat center center;
+    left: 0;
+    top: 50%;
+    margin-top: -34px;
+}
+.hot-topic .swiper-button-prev:hover {
+    background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-left-hv.png') no-repeat center center;
+}
+.hot-topic .swiper-button-next {
+    background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-right.png') no-repeat center center;
+    right: 0;
+    top: 50%;
+    margin-top: -34px;
+}
+.hot-topic .swiper-button-next:hover {
+    background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-right-hv.png') no-repeat center center;
+}
+.hot-topic .swiper-pagination{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    bottom: auto;
+    left: auto;
+    width: auto;
+}
+.hot-topic .swiper-pagination .swiper-pagination-bullet{
+    background: #5c5c5c;
+    opacity: 1;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.hot-topic .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: #0fd186;
+}
+.hot-topic:after {
+    content: "";
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 );
+}
+.post-content.index {
+    background: none;
+}
+.post-content.index .related-post {
+    background: none;
+    margin: 0 0;
+}
+.post-content.index .related-post .relate-item {
+    margin-bottom: 0;
+}
+.post-content-new.index{
+    background: #fff;
+    border: 1px solid #e6e5e5;
+    position: relative;
+    margin-top: 30px;
+}
+.post-content-new.index .interested-post .title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    padding: 22px 20px 0;
+}
+.post-content-new.index .interested-post .title .icon-line-chart{
+    width: 29px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/icon-line-chart.png') no-repeat center center;
+    margin-right: 3px;
+}
+.post-content-new.index .interested-post .swiper-container{
+    padding-top: 19px; 
+    margin-left: 30px;
+    padding-bottom: 27px;
+}
+.post-content-new.index .interested-post .swiper-slide .thumb-image{
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin:  0 0 10px;
+}
+.post-content-new.index .interested-post .swiper-slide .thumb-image img{
+    width: 100%;
+}
+.post-content-new.index .interested-post .swiper-slide .thumb-image span{
+    position: absolute;
+    z-index: 9;
+    background: rgba(0,0,0,0.72);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 15px;
+}
+.post-content-new.index .interested-post .swiper-slide .thumb-image i{
+    color: #0fd186;
+}
+.post-content-new.index .interested-post .swiper-slide .post-title{
+    font-size: 18px;
+    font-weight: 500;
+    color: #3e3d3c;
+    line-height: 24px;
+    display: block;
+}
+.post-content-new.index .interested-post .swiper-button-prev,
+.post-content-new.index .interested-post .swiper-button-next{
+    width: 33px;
+    height: 68px;
+    background: #fff;
+}
+.post-content-new.index .interested-post .swiper-button-prev.swiper-button-disabled,
+.post-content-new.index .interested-post .swiper-button-next.swiper-button-disabled{
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: auto;
+}
+.post-content-new.index .interested-post .swiper-button-prev {
+    background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-left.png') no-repeat center center;
+    left: 0;
+    top: 98px;
+}
+.post-content-new.index .interested-post .swiper-button-prev:hover {
+    background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-left-hv.png') no-repeat center center;
+}
+.post-content-new.index .interested-post .swiper-button-next {
+    background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-right.png') no-repeat center center;
+    right: 0;
+    top: 98px;
+}
+.post-content-new.index .interested-post .swiper-button-next:hover {
+    background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-right-hv.png') no-repeat center center;
+}
+.post-content-new.index .interested-post .swiper-pagination{
+    position: absolute;
+    right: 20px;
+    top: 34px;
+    bottom: auto;
+    left: auto;
+    width: auto;
+}
+.post-content-new.index .interested-post .swiper-pagination .swiper-pagination-bullet{
+    background: #5c5c5c;
+    opacity: 1;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.post-content-new.index .interested-post .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: #0fd186;
+}
+
+/* Form subscribe */
+.subscribe h4 {
+    font-size: 25px !important;
+}
+.subscribe-modal .modal-dialog {
+    width: 688px;
+    margin-top: 70px;
+}
+.subscribe-modal .modal-dialog .modal-content {
+    box-shadow: none;
+    background: transparent;
+    border-radius: 0;
+}
+.subscribe-modal .modal-dialog  .modal-body {
+    padding : 0 0;
+}
+
+.subscribe {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.subscribe .btn-subscribe {
+    color: #ffffff;
+    background: #2ad38b;
+    background: linear-gradient(to right, #2ad38b , #0cceb0);
+    border-radius: 45px;
+    display: inline-block;
+    line-height: 63px;
+    padding: 0 35px;
+    outline: none;
+    -webkit-user-select: none;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    white-space: nowrap;
+    font-size: 16px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.subscribe .btn-subscribe:before {
+    content: "";
+    border-radius: 45px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.04);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.subscribe .btn-subscribe:hover, .subscribe .btn-subscribe:focus, .subscribe .btn-subscribe:active {
+    color: white;
+    text-decoration: none;
+}
+
+.subscribe .btn-subscribe:hover:before, .subscribe .btn-subscribe:focus:before, .subscribe .btn-subscribe:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.subscribe .btn-subscribe:hover {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.subscribe .sub-arrow {
+    background: url(https://www.sapo.vn/blog/wp-content/themes/ver2018/images/right-arrow.png) no-repeat center center;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+    position: absolute;
+    left: -60px;
+    top: 10px;
+    z-index: 2;
+}
+
+.modal-content span.close {
+    opacity: 1;
+    float: none;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    z-index: 9999991;
+    font-size: 35px;
+}
+
+@media (max-width: 767px) {
+    .subscribe-modal .modal-dialog {
+        margin: 80px 0 0;
+        width: auto;
+        height: auto;
+    }
+
+    .modal-content span.close {
+        font-size: 25px;
+    }
+}
+
+body > iframe {
+    display: none !important;
+}
+
+.bizweb-intro {
+    background: url(https://www.sapo.vn/blog/wp-content/themes/ver2018/images/bg-aboutus.jpg) no-repeat center center;
+    padding: 12px 15px;
+    min-height: 360px;
+    color: #fff;
+}
+@media(max-width: 1199px){
+    .bizweb-intro{
+        background-size: 100% 100%;
+    }
+}
+.bizweb-intro .content {
+    border: 1px dashed #fff;
+    height: 100%;
+    text-align: center;
+}
+.bizweb-intro .content h3 {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin: 15px 0 20px;
+}
+.bizweb-intro .content p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 25px;
+    padding: 0 15px;
+    text-align: left;
+}
+.bizweb-intro .content a {
+    display: inline-block;
+    font-size: 16px;
+    height: 52px;
+    line-height: 52px;
+    padding: 0 35px;
+    border-radius: 26px;
+    margin-bottom: 25px;
+    background: #fff;
+    color: #0fd186;
+}
+
+.today-reading{
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #e6e5e5;
+}
+.today-reading .title{
+    font-size: 22px;
+    font-weight: bold;
+    color: #333333;
+    text-transform: uppercase;
+    padding: 18px 29px;
+    line-height: 24px;
+}
+.today-reading .title .icon-time{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: top;
+    background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/icon-clock.png') no-repeat center center;
+    margin-right: 7px;
+}
+.main-content .today-reading .list-post{
+    padding: 0 20px 5px;
+    overflow-y: scroll;
+    max-height: 710px;
+}
+.main-content .today-reading .list-post::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+  border-radius: 3px;
+}
+
+.main-content .today-reading .list-post::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.main-content .today-reading .list-post::-webkit-scrollbar-thumb
+{
+	background-color: #cacaca;
+  border-radius: 3px;
+}
+.today-reading .list-post .item{
+    border-top: 1px solid #ebebeb;
+    padding: 15px 0;
+    font-size: 0;
+}
+.today-reading .list-post .item .thumb-image{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+    border-radius: 6px;
+    overflow: hidden
+}
+.today-reading .list-post .item .thumb-image img{
+    max-width: 100%;
+    max-height: 80px; 
+}
+.today-reading .list-post .item .post-info{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 95px);
+    font-size: 14px;
+}
+.today-reading .list-post .item .post-info a{
+    display: block;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #333333;
+    margin: 0 0 7px;
+}
+.today-reading .list-post .item .post-info span{
+    display: block;
+    font-size: 13px;
+    color: #9e9e9e;
+    line-height: 22px;
+}
+
+.cta-box-5 {
+    max-width: 450px;
+    padding: 20px;
+    box-shadow: #eee 0 0 10px 5px;
+    border-radius: 5px;	
+    margin: 10px auto;
+    text-align: center;
+}
+
+.cta-box-5 h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #444;
+    margin: 0 0 15px;
+}
+
+.cta-box-5 p:last-of-type {
+    margin-bottom: 0 !important;
+}
+
+.pos-box {
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 4px;
+    border: 1px solid #e9e9e9;
+    background: #f8f8f8;
+}
+.pos-box .image img {
+    max-width: 100px;
+}
+.pos-box .info {
+    border-left: 1px solid #e9e9e9;
+    padding-left: 40px;
+}
+.pos-box .info h4 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #4b4b4b;
+    margin: 0 0 15px;
+}
+.pos-box .info p {
+    font-size: 15px;
+    color: #4b4b4b;
+    line-height: 30px;
+    margin: 0 0 20px;
+}
+.pos-box .info a {
+    color: #0fd186;
+}
+.pos-box .info img {
+    width: 25px;
+    display: inline-block;
+    vertical-align: sub;
+}
+
+.discover-sapo{
+  text-align: center;
+  font-family: "Roboto";
+}
+.discover-sapo p{
+  font-size: 20px;
+  font-weight: bold;  
+  color: #5a5a5a;
+}
+.discover-sapo .btn-registration{
+  color: #fff !important;
+  font-size: 18px;
+  font-weight: bold;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 52px;
+  margin-top: 0 !important;
+}
+.discover-sapo .btn-registration:after{
+  content: "";
+  width: 50px;
+  height: 38px;
+  background: url('https://www.sapo.vn/blog/wp-content/themes/ver2018/images/arrow-button-registration.png') no-repeat center center;
+  position: absolute; 
+  left: -24px;
+  top: 6px;
+}
+@media (max-width: 767px) {
+.pos-box .image img {
+    margin-bottom: 20px;
+}
+.pos-box .info {
+    border: none;
+    padding: 0 20px;
+    text-align: center;
+}
+}
+.ajax-load-more-wrap.blue .alm-load-more-btn{
+  background: #0fd186 !important;
+}
+.btn-backtohome{
+    background: #0fd186;
+    display: block;
+    color: #fff;
+    padding: 0 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 39px;
+    line-height: 39px;
+}
+.btn-backtohome i{
+  margin-right: 5px;
+}
+
+.topic-hot {
+  background: #252525;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.topic-hot .swiper-pagination {
+  top: 30px;
+  right: 15px;
+}
+.topic-hot .swiper-pagination .swiper-pagination-bullet {
+  background: #5c5c5c;
+  margin-right: 5px;
+  opacity: 1;
+}
+.topic-hot .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #0fd186;
+}
+.topic-hot .title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    padding: 22px 20px 0 30px;
+}
+.topic-hot .swiper-container {
+    padding: 25px 0 45px 30px;
+}
+.topic-hot .topic-item .thumb-image {
+  display: block;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 5px #141414;
+}
+.topic-hot .topic-item .thumb-image img {
+  max-width: 100%;
+}
+.topic-hot .topic-item .thumb-image:hover .topic-info {
+  display: block;
+}
+.topic-hot .topic-item .thumb-image:hover img {
+  opacity: 0.3;
+}
+.topic-hot .topic-item .topic-info {
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: none;
+}
+.topic-hot .topic-item .topic-info .type {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.topic-hot .topic-item .topic-info .title {
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  margin: 10px 60px 0;
+  padding: 0 0 10px;
+  font-weight: 300;
+}
+.topic-hot .title .icon-topic {
+    width: 29px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(https://www.sapo.vn/blog/wp-content/themes/ver2018/images/icon-topic.png) no-repeat center center;
+    margin-right: 3px;
+    vertical-align: baseline;
+}
+
+.topic-hot .swiper-button-prev, .topic-hot .swiper-button-next {
+    width: 33px;
+    height: 68px;
+    background: #fff;
+    top: 50%;
+    margin-top: -34px;
+}
+.topic-hot .swiper-button-prev {
+    background: url(https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-left.png) no-repeat center center;
+    left: 30px;
+}
+.topic-hot .swiper-button-prev:hover {
+    background: url(https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-left-hv.png) no-repeat center center;
+    left: 30px;
+}
+.topic-hot .swiper-button-next {
+    background: url(https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-right.png) no-repeat center center;
+    right: 0;
+}
+.topic-hot .swiper-button-next:hover {
+    background: url(https://www.sapo.vn/blog/wp-content/themes/ver2018/images/long-arrow-right-hv.png) no-repeat center center;
+}
+.topic-hot .swiper-button-prev.swiper-button-disabled, .topic-hot .swiper-button-next.swiper-button-disabled {
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: auto;
+}
+@media (max-width: 767px) {
+  .topic-hot {
+    border-radius: 0;
+  }
+  .topic-hot .swiper-container {
+    padding-left: 0;
+  }
+  .topic-hot .swiper-button-prev {
+    left: 0;
+  }
+}

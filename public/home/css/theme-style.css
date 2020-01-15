@@ -1,0 +1,272 @@
+.themes-item .name {
+    padding-left: 15px
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.themes-list {
+    background: #eeeff1;
+}
+
+.themes-list .image img {
+    width: 100%
+}
+
+.themes-item .name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333
+}
+
+.themes-item a:hover {
+    text-decoration: none
+}
+
+.themes-list .theme-overlay {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.themes-list .theme-overlay {
+    height: 460px
+}
+
+.themes-list .theme-overlay {
+    display: inherit
+}
+
+.themes-list .image .customer-logo img {
+    max-height: 40px;
+    width: initial
+}
+
+.themes-list .image img {
+    width: 100%
+}
+
+.themes-item .price {
+    color: #ed1c24
+}
+
+.themes-list .theme-overlay {
+    height: 380px
+}
+
+.themes-list .image img {
+    width: 100%
+}
+
+.themes-list .customer-logo {
+    height: 70px
+}
+
+.themes-item {
+    position: relative;
+    padding-bottom: 10px;
+    border-radius: 5px
+}
+
+.themes-item:hover .overlay, .themes-item.active .overlay {
+    width: 100%;
+    transform: scale(1)
+}
+
+.themes-item .overlay:hover {
+    cursor: pointer
+}
+
+.themes-item a.fa-ellipsis-h {
+    border-right: 1px solid;
+    -webkit-border-image: -webkit-gradient(linear, 0 100%, 0 0, from(#ababab), to(#fff)) 1 100%;
+    -webkit-border-image: -webkit-linear-gradient(bottom, #ababab, #fff) 1 100%;
+    -moz-border-image: -moz-linear-gradient(bottom, #ababab, #fff) 1 100%;
+    -o-border-image: -o-linear-gradient(bottom, #ababab, #fff) 1 100%;
+    border-image: linear-gradient(to top, #ababab, #fff) 1 100%
+}
+
+.app-category .themes-item {
+    margin-top: 0
+}
+
+.choose-theme-page .themes-item:hover {
+    cursor: pointer
+}
+
+.themes-item:hover .overlay {
+    visibility: visible;
+    transform: scale(1)
+}
+
+.themes-menu {
+    margin-top: 70px
+}
+
+.theme-overlay.image {
+    margin-bottom: 0
+}
+
+.themes-item {
+    padding-bottom: 0
+}
+
+.theme-overlay.overlay {
+    background: #fff
+}
+
+.theme-overlay .button {
+    display: inline-block
+}
+
+.theme-overlay .btn-detail {
+    border: 1px solid #ed1c24
+}
+
+.theme-overlay .btn-demo {
+    border: 1px solid #2482bd
+}
+
+.theme-overlay.overlay p {
+    padding: 15px
+}
+
+.theme-overlay.overlay {
+    transform: scale(1);
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, .3)
+}
+
+.theme-overlay.overlay {
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3)
+}
+
+.theme-overlay .button a {
+    color: #888
+}
+
+.theme-overlay.overlay {
+    transform: scale(0);
+    background-color: rgba(0, 0, 0, .3)
+}
+
+.theme-overlay .button {
+    background: #fff;
+    border-radius: 16px;
+    display: block
+}
+
+.theme-overlay .button + .button {
+    margin-top: 20px
+}
+
+.theme-overlay .btn-detail {
+    border: #fff solid 1px;
+    text-transform: uppercase;
+    color: #ed1c24
+}
+
+.theme-overlay .btn-demo {
+    border: #fff solid 1px;
+    text-transform: uppercase;
+    color: #2482bd
+}
+
+.theme-overlay.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%
+}
+
+@media (min-width: 768px) {
+    .themes-item:hover .overlay, .themes-item.active .overlay {
+        width: 100%;
+        transform: scale(1);
+        -webkit-transition: all 0.5s ease-out 0s;
+    }
+}
+
+.theme-overlay .btn-detail {
+    border: #fff solid 1px;
+    text-transform: uppercase;
+    color: #ed1c24;
+}
+
+.theme-overlay .button {
+    background: #fff;
+    border-radius: 16px;
+    display: block;
+}
+
+.btn--zozo:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn--zozo {
+    border: solid 1px #ed1c24;
+    border-radius: 16px;
+    color: #ed1c24;
+    width: 120px;
+    line-height: 32px;
+    display: inline-block;
+    text-align: center;
+}
+
+.themes-list .theme-overlay {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.themes-list .image img {
+    width: 100%;
+}
+
+.theme-overlay.image {
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: inherit;
+    border-radius: 5px 5px 0 0;
+}
+
+.themes-item .name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+}
+
+.theme-spec .category, .themes-item .name {
+    padding-left: 15px;
+}
+
+.themes-item .price {
+    color: #ed1c24;
+}
+
+.theme-spec .price, .theme-spec .category {
+    width: 68%;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.theme-spec .price {
+    width: 30%;
+    padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+    .themes-item {
+        margin-top: 30px;
+    }
+}
